@@ -1475,6 +1475,7 @@ _多步 / 多 agent 调度器与输出聚合器。_
 ## UI / 客户端
 
 _DSH 的桌面、网页、终端或编辑器前端。_
+- [WilliamShi666/dsh-multiple-chat-panels](https://github.com/WilliamShi666/dsh-multiple-chat-panels) —— DeepSeek Harness 多对话面板：并排查看并与多个 Agent 同时交互。
 
 - [030611/dsh-companion-studio](https://github.com/030611/dsh-companion-studio) —— DeepSeek Harness 的隐私友好、可打包桌面陪伴角色。
 - [EachSheep/dsh-valley-pixel-skin](https://github.com/EachSheep/dsh-valley-pixel-skin) —— DeepSeek Harness Desktop 与 Web UI 的田园像素风皮肤。
