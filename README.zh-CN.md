@@ -789,6 +789,7 @@ _跨会话记忆、checkpoint、会话置顶与导航插件。_
 - [qiushi-dev/dsh-session-nexus](https://github.com/qiushi-dev/dsh-session-nexus) —— 非官方 DeepSeek Harness 插件，让会话成为可寻址的一类公民：生命周期控制 + 跨会话消息传递。
 - [TOBYCAI/dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) —— 管理 DSH 中的归档会话：查看/恢复/彻底删除，含工作区标签、会话日期与批量多选。
 - [x2it/dsh-memory-panel](https://github.com/x2it/dsh-memory-panel) —— DeepSeek Harness 的长期记忆插件：memory_save/recall/list 工具 + 侧边栏面板，可视化 agent 对你的记忆。
+- [Chael-Chael/dsh-reference-anything](https://github.com/Chael-Chael/dsh-reference-anything) —— 扩展原生 @ 菜单，支持可搜的引用：工作区文件、DSH 会话、14 种本地编码 agent 诐本格式，以及通过 OpenCLI 读取的 ChatGPT/Claude/Gemini/DeepSeek/Grok/Kimi 历史记录；有界按需读取，可选本地镜像。
 ## 成本与用量统计
 
 _token 用量、成本看板与预算告警插件。_

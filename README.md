@@ -796,6 +796,7 @@ _Cross-session memory, checkpoints, pinning, and session navigation plugins._
 - [Reedphoto3/dsh-outline-plugin](https://github.com/Reedphoto3/dsh-outline-plugin) — Session-scoped outline, todo, note, and image panel for DeepSeek Harness Web UI.
 - [HanLoney/CodexShift](https://github.com/HanLoney/CodexShift) — Provider switching plus a fix for Codex's historical-task index: syncs rollout / state_5.sqlite to keep past sessions visible and usable; supports bidirectional import/export of Codex ↔ DeepSeek Harness projects, sessions, and chat history.
 - [TOBYCAI/dsh-archived-sessions](https://github.com/TOBYCAI/dsh-archived-sessions) — Manage archived sessions in DSH — view / restore / permanently delete, with workspace tags, session dates & batch multi-select.
+- [Chael-Chael/dsh-reference-anything](https://github.com/Chael-Chael/dsh-reference-anything) — Extends the native @ menu with searchable references to workspace files, DSH sessions, 14 local coding-agent transcript formats, and ChatGPT/Claude/Gemini/DeepSeek/Grok/Kimi histories via OpenCLI; bounded on-demand reads with an optional local mirror.
 ## Cost & Usage Tracking
 
 _Token usage, cost dashboards, and budget-alert plugins._
