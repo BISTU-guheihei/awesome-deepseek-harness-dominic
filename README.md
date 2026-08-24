@@ -787,6 +787,7 @@ _Cross-session memory, checkpoints, pinning, and session navigation plugins._
 - [alooshxl/dsh-session-pins](https://github.com/alooshxl/dsh-session-pins) — Pin sessions to a quick-access menu.
 - [PerryLink/dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) — Pin sessions for quick access.
 - [malevrigns/dsh-session-stars](https://github.com/malevrigns/dsh-session-stars) — Star/favorite sessions.
+- [qwert702/dsh-context-compressor](https://github.com/qwert702/dsh-context-compressor) — Context compression for small models: compresses tool output and conversation history to a few sentences, freeing context for the actual task; continues in a fresh session automatically.
 - [skepsun/dsh-loom](https://github.com/skepsun/dsh-loom) — Minimalist, token-saving long-term memory plugin for DeepSeek Harness: zero-LLM auto-capture, symbolic-index progressive disclosure, and ESR-lite evidence closure.
 - [ExploringBB/dsh-plugin-edit-regenerate](https://github.com/ExploringBB/dsh-plugin-edit-regenerate) — Edit a user message in conversation history and regenerate from the revised prompt in a forked session.
 - [xiaoshenming/dsh-session-surgeon](https://github.com/xiaoshenming/dsh-session-surgeon) — Repair unloadable DSH sessions (seq gap, torn zstd). Sidebar Session surgeon; dry-run by default.
@@ -916,6 +917,7 @@ _Cross-session memory, checkpoints, pinning, and session navigation plugins._
 - [Coprexist/dsh-session-recovery](https://github.com/Coprexist/dsh-session-recovery) — Recovers deleted or corrupted DSH session logs (session.jsonl.zstd) and memory (memory.db) from raw disk — battle-tested recovery toolkit for DeepSeek Harness.
 - [NB4747/dsh-session-sync](https://github.com/NB4747/dsh-session-sync) — Session-sync plugin for DeepSeek Harness.
 - [reatcat/l123-harness](https://github.com/reatcat/l123-harness) — L1-L2-L3 three-tier memory agent base for DeepSeek Harness: access gate, event log, weekly review distillation, and a TDD execution flow.
+- [qwert702/dsh-continue-on-limit](https://github.com/qwert702/dsh-continue-on-limit) — Auto-sends continue when a local model hits its output-token cap: dual-source detection (turn-max-tokens node + provider response), maxConsecutive guard (default 3) prevents infinite loops, throttled by minimum interval and deduplication.
 - [RyensX/dsh-message-navigation](https://github.com/RyensX/dsh-message-navigation) — Codex-style user-message navigation bar for DeepSeek Harness.
 - [VinsonWild/Wangdefa.Memory](https://github.com/VinsonWild/Wangdefa.Memory) — A five-layer memory component for personal-assistant agents, fully local (no cloud dependency), lightweight, white-box controllable, and explainable; aims toward enterprise-native memory in the future.
 
@@ -995,6 +997,7 @@ _Token usage, cost dashboards, and budget-alert plugins._
 - [1841220388zzzcccxxx-star/dsh-token-stats](https://github.com/1841220388zzzcccxxx-star/dsh-token-stats) — Token usage & cost statistics plugin for DeepSeek Harness — per model / date / session, cost estimation (USD/CNY), CSV/JSON export.
 - [lninghaha/dsh-hub-oauth-gateway](https://github.com/lninghaha/dsh-hub-oauth-gateway) — DSH Web plugin: Usage Center with Hub snapshots and cost analytics, coding-plan OAuth, and optional loopback OpenAI-compatible gateway.
 - [z-col/dsh-deepseek-peak-valley](https://github.com/z-col/dsh-deepseek-peak-valley) — DeepSeek time-of-day billing widget — DSH client plugin (platform=web): auto-detects peak/off-peak windows by Beijing time, with 10 sidebar-widget styles plus a settings page.
+- [qwert702/dsh-token-viewer](https://github.com/qwert702/dsh-token-viewer) — CC Switch-style token consumption statistics: per-request usage log, real-consumption hero with cache-hit rate, request-time-bucketed trend chart, per-model peak/off-peak list pricing fetched live from the official pricing page, per-project and per-model stats, and account balance.
 - [PolinniZhong/dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) — DeepSeek Harness personal-center plugin: profile statistics (tokens / tool calls / per-model breakdown / token activity) plus personalized custom instructions. Runs fully locally, no network calls.
 - [oxgbl/dsh-deepseek-price](https://github.com/oxgbl/dsh-deepseek-price) — Sidebar peak/off-peak pricing badge with half-price countdown, a click-through detail panel, and a `/price` command.
 - [Ethanz11-creat/dsh-billing-tui](https://github.com/Ethanz11-creat/dsh-billing-tui) — Peak/off-peak billing plugin for DeepSeek Harness (dsh): real-time token costing, ASCII whale receipts, TUI status line, and a `/billing` command.
@@ -1413,6 +1416,7 @@ _Plugins that turn data / results into charts, diagrams, dashboards._
 - [william-jin-cmu/dsh-vision](https://github.com/william-jin-cmu/dsh-vision) — `view_image` tool bridging any OpenAI-compatible VLM to text-only models.  `⭐10`
 - [wang-bool/visual-review](https://github.com/wang-bool/visual-review) — Renders pasted/uploaded images inline in the DSH Web chat and gives text-only models vision: cloud multimodal API first, local Qwen3-VL fallback.
 - [omdsh-dev/dsh-genui](https://github.com/omdsh-dev/dsh-genui) — Interactive UI components rendered inline in assistant replies via a `dsh-ui` fence — layout, charts, plots, forms, quizzes, mermaid, 3D scenes — with an action event loop back to the model.  `⭐14`
+- [qwert702/dsh-auto-translate](https://github.com/qwert702/dsh-auto-translate) — Auto-translates English replies inline below the original text, with Chinese annotations for tool calls (uses a built-in vocabulary covering common harness tools; unknown tools are labeled rather than guessed). Translation goes through an independent provider request and never enters the session context.
 - [omdsh-dev/dsh-ernie-image](https://github.com/omdsh-dev/dsh-ernie-image) — Baidu ERNIE-Image-Turbo text-to-image: a host-side generation tool plus a browser gallery panel and config card.
 - [omdsh-dev/dsh-paddle-ocr](https://github.com/omdsh-dev/dsh-paddle-ocr) — PaddleOCR-VL document layout parsing: converts PDFs/images to Markdown page by page, with host tools, a config card, and a task panel.
 - [PangYiMing/dsh-screenshot-diff](https://github.com/PangYiMing/dsh-screenshot-diff) — Pixel-diffs two screenshots into a diff image and triptych (pixelmatch).
